@@ -1,0 +1,30 @@
+<h4>Add Producto</h4>
+<div class="container">
+  <form (ngSubmit)="agregar()">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Nombre"
+      name="nombre"
+      [(ngModel)]="producto.nombre"
+    /><br />
+
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Marca"
+      aria-describedby="basic-addon1"
+      name="marca"
+      [(ngModel)]="producto.marca"
+    /><br />
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Precio"
+      name="precio"
+      [(ngModel)]="producto.precio"
+    />
+    <br />
+    <button type="submit" class="btn btn-outline-primary">Guardar</button>
+  </form>
+</div>
